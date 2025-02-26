@@ -1,0 +1,119 @@
+/* Global Styling */
+body {
+    background: #121212;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Card */
+.form-card {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.form-card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3);
+    transform: scale(1.01);
+}
+
+/* Title & Subtitle */
+h2 {
+    color: #00cccc;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #bbb;
+    font-size: 14px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+/* Input Fields */
+.custom-input {
+    width: 70%;
+    text-align: left;
+    padding: 12px;
+    color: #ddd;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    background: #252525;
+    outline: none;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 10px;
+    line-height: 2;
+}
+
+/* Placeholder Fix */
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+    text-align: left;
+}
+
+/* Focus Effect */
+.custom-input:focus {
+    background: #2a2a2a;
+    border-color: rgba(0, 255, 255, 0.6);
+}
+
+/* Button */
+.btn-primary {
+    background: #00cccc;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    width: 65%;
+}
+
+.btn-primary:hover {
+    background: #009999;
+}
+
+/* New User Link */
+.new-user {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.text-highlight {
+    color: #00cccc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text-highlight:hover {
+    color: #009999;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-card {
+        width: 90%;
+        padding: 20px;
+    }
+}
